@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-8">
+    <table class="table">
+      <tr ng-repeat="item in list.found">
+        <td>{{item.name}}</td>
+        <td>{{item.short_name}}</td>
+        <td>{{item.description}}</td>
+        <td><button class="btn btn-danger" ng-click="list.onRemove({index: $index});">Don't want this one!</button></td>
+      </tr>
+    </table>
+    <div style="color: red" ng-if="list.empty()">Nothing found</div>
+  </div>
+</div>
