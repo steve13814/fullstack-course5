@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <style>
+      .active { font-weight: bold; }
+    </style>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <title>Welcome to our Restaurant</title>
+  </head>
+  <body>
+    <div class="container">
+      <ui-view></ui-view>
+    </div>
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <!-- Modules -->
+    <script src="src/menudata.module.js"></script>
+    <script src="src/menuapp.module.js"></script>
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+    <!-- 'MenuApp' module artifacts -->
+    <script src="src/categories.component.js"></script>
+    <script src="src/categories.controller.js"></script>
+    <script src="src/items.component.js"></script>
+    <script src="src/items.controller.js"></script>
+    <!-- 'MenuData' module artifacts -->
+    <script src="src/menudata.service.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<ol class="breadcrumb">
+  <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+  <li><a ui-sref="categories" ui-sref-active="active">Category</a></li>
+  <li><a ui-sref="items({categoryShortName: $state.params.categoryShortName})" ui-sref-active="active">Item {{$state.params.categoryShortName}}</a></li>
+</ol>
+<items items-list="itemCtrl.itemsList"></items>
